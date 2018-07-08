@@ -3,13 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoTrial.Web", "ProtoTrial.Web\ProtoTrial.Web.csproj", "{3BCF78B8-2558-4345-AEC7-EA72EF952FF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtoTrial.Web", "ProtoTrial.Web\ProtoTrial.Web.csproj", "{3BCF78B8-2558-4345-AEC7-EA72EF952FF9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoTrial.Test", "ProtoTrial.Test\ProtoTrial.Test.csproj", "{10F3F1AC-60B9-410D-976C-6A58040291EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoTrial.Dto", "ProtoTrial.Dto\ProtoTrial.Dto.csproj", "{2BB28A99-44AA-4D7C-9FF0-857A4E6DE54F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtoTrial.Dto", "ProtoTrial.Dto\ProtoTrial.Dto.csproj", "{2BB28A99-44AA-4D7C-9FF0-857A4E6DE54F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B2633387-177E-40C4-B885-1432CF76DBAA}"
+	ProjectSection(SolutionItems) = preProject
+		Protobuf-ASMX WebApi.postman_collection.json = Protobuf-ASMX WebApi.postman_collection.json
+	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ASMXSite", "ASMXSite\", "{AA7281A4-49DD-48A2-AB55-0A917FED3E52}"
 	ProjectSection(WebsiteProperties) = preProject

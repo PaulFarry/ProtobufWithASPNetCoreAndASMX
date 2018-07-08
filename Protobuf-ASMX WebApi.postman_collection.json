@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "d263717a-3241-4858-be0c-466a42bf2823",
+		"name": "Protobuf/ASMX => WebApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Base64 Protobuf <== Rocket ==> JSON",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/protobuf+base64"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "CK+WExAz"
+				},
+				"url": {
+					"raw": "https://localhost:44364/api/rockets",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"rockets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JSON <== Rocket  ==> JSON",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"value\": 314159,\n    \"diameter\": 51\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44364/api/rockets",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"rockets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "JSON <== Rocket  ==> Protobuf Out",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/protobuf+base64"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"value\": 1,\n    \"diameter\": 1\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44364/api/rockets",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"api",
+						"rockets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post XML",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/xml"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "some data"
+				},
+				"url": {
+					"raw": "https://localhost:44364/something.asmx/thingsILike",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44364",
+					"path": [
+						"something.asmx",
+						"thingsILike"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "d6332b27-32ea-4c33-bb51-c420088f3de4",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "51deb427-09a3-4023-9706-3d10690c1f52",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

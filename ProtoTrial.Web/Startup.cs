@@ -22,9 +22,10 @@ namespace ProtoTrial.Web
                 setup =>
                 {
                     setup.ReturnHttpNotAcceptable = true;
-                    setup.InputFormatters.Add(new ProtoBufContractSerializerInputFormatter());
+                    setup.InputFormatters.Add(new ProtobufInputFormatter());
                     setup.InputFormatters.Add(new RawRequestInputFormatter());
                     //setup.InputFormatters.Add(new XmlDataContractSerializerInputFormatter());
+                    setup.OutputFormatters.Add(new ProtobufOutputFormatter());
                 }
             );
         }

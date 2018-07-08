@@ -5,13 +5,14 @@ using System.Threading.Tasks;
 
 namespace ProtoTrial.Web.Formatters
 {
-    internal class ProtoBufContractSerializerInputFormatter : InputFormatter
+    internal class ProtobufInputFormatter : InputFormatter
     {
-        public ProtoBufContractSerializerInputFormatter()
+        public ProtobufInputFormatter()
         {
             SupportedMediaTypes.Add(Dto.MediaType.ProtoBuf.MediaType);
             SupportedMediaTypes.Add(Dto.MediaType.ProtoBufBase64.MediaType);
         }
+
         public override async Task<InputFormatterResult> ReadRequestBodyAsync(InputFormatterContext context)
         {
             var request = context.HttpContext.Request;

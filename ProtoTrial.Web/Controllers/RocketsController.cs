@@ -13,5 +13,12 @@ namespace ProtoTrial.Web.Controllers
         {
             return Ok(rocket);
         }
+
+        [HttpGet("{value}/{diameter}")]
+        public IActionResult GetRocket(int value, int diameter)
+        {
+            var rocket = new Rocket { Value = value, Diameter = diameter };
+            return Ok(rocket);
+        }
     }
 }
