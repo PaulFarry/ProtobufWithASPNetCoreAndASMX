@@ -3,7 +3,7 @@
 namespace ProtoTrial.Dto
 {
     [ProtoContract]
-    public class Rocket
+    public class Rocket :ProtobufEntity
     {
         [ProtoMember(1)]
         public int Value { get; set; }
