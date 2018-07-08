@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ProtoTrial.Web.Formatters;
+using System.Diagnostics;
 
 namespace ProtoTrial.Web
 {
@@ -24,7 +25,6 @@ namespace ProtoTrial.Web
                     setup.ReturnHttpNotAcceptable = true;
                     setup.InputFormatters.Add(new ProtobufInputFormatter());
                     setup.InputFormatters.Add(new RawRequestInputFormatter());
-                    //setup.InputFormatters.Add(new XmlDataContractSerializerInputFormatter());
                     setup.OutputFormatters.Add(new ProtobufOutputFormatter());
                 }
             );
