@@ -1,8 +1,4 @@
 ﻿using ProtoTrial.Dto;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Services;
 
 /// <summary>
@@ -31,7 +27,7 @@ public class WebService : System.Web.Services.WebService
     [WebMethod]
     public string CreateRocket(Rocket rocket)
     {
-        return "hello2";
+        return rocket.Value.ToString();
     }
 
 }

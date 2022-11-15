@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2035
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtoTrial.Web", "ProtoTrial.Web\ProtoTrial.Web.csproj", "{3BCF78B8-2558-4345-AEC7-EA72EF952FF9}"
 EndProject
@@ -16,7 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ASMXSite", "ASMXSite\", "{AA7281A4-49DD-48A2-AB55-0A917FED3E52}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.2"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		ProjectReferences = "{2bb28a99-44aa-4d7c-9ff0-857a4e6de54f}|ProtoTrial.Dto.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_58517"
 		Debug.AspNetCompiler.PhysicalPath = "ASMXSite\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58517\"

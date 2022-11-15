@@ -80,7 +80,6 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Connected Services\MyService\WebService.wsdl" />
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -95,12 +94,6 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ProtoTrial.Dto\ProtoTrial.Dto.csproj">
-      <Project>{2bb28a99-44aa-4d7c-9ff0-857a4e6de54f}</Project>
-      <Name>ProtoTrial.Dto</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
@@ -122,6 +115,12 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProtoTrial.Dto\ProtoTrial.Dto.csproj">
+      <Project>{2bb28a99-44aa-4d7c-9ff0-857a4e6de54f}</Project>
+      <Name>ProtoTrial.Dto</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
